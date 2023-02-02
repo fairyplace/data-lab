@@ -1,4 +1,30 @@
+body {
+	font-family: "Inter", sans-serif;
+}
+.wrapper {
+	min-height: 100vh;
+	overflow: hidden;
+}
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+}
 
-.wrapper{
-  overflow: hidden;
+.header-logo__img {
+}
+.header__menu {
+}
+.menu {
+}
+.menu__item {
+}
+.menu__link {
+}
+.header-contacts {
+}
+.header-contacts__num {
+}
+.tel-link {
+}
+.header-contacts__messegers {
 }
