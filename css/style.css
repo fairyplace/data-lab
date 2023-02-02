@@ -2,29 +2,52 @@ body {
 	font-family: "Inter", sans-serif;
 }
 .wrapper {
-	min-height: 100vh;
+	min-height: 100%;
 	overflow: hidden;
 }
-.container {
+._container {
 	max-width: 1300px;
-	margin: 0 auto;
+	margin: 0px auto;
 }
+/* ------------------------HEADER----------------------- */
 
-.header-logo__img {
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 42;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+
+  min-height: 60px;
 }
 .header__menu {
+
 }
 .menu {
+}
+.menu__list{
+  display: flex;
 }
 .menu__item {
 }
 .menu__link {
 }
-.header-contacts {
+.header__contacts {
 }
-.header-contacts__num {
+.contacts {
 }
-.tel-link {
+.contacts__tel {
 }
-.header-contacts__messegers {
+.tel__link {
+}
+.contacts__messegers {
+}
+.messegers {
+}
+.messegers__tg {
+}
+.messegers__wa {
 }
