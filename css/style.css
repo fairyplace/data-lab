@@ -27,6 +27,7 @@ body {
 
 	box-sizing: content-box;
 }
+
 /* ------------------------HEADER----------------------- */
 .header {
 	width: 100%;
@@ -106,7 +107,7 @@ body {
 	flex: 1 1 auto;
 }
 .page__main-block {
-	margin: 233px 0px 120px 0px;
+	margin: 233px 0px 130px 0px;
 }
 
 .main-block {
@@ -198,8 +199,10 @@ body {
 	background-color: var(--primary-color);
 }
 /* ------------------SERVICES-------------------------- */
-
-.section__title {
+.page__services {
+	margin: 0px 0px 242px 0px;
+}
+.section-title {
 	margin: 0px 0px 40px 0px;
 	font-family: "Montserrat";
 	font-style: normal;
@@ -207,10 +210,10 @@ body {
 	font-size: 48px;
 	line-height: 120%;
 }
-.services__body{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.services__body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .services__title {
@@ -222,13 +225,13 @@ body {
 	text-align: center;
 	color: var(--light-text);
 
-  margin: 0px 0px 40px 0px;
+	margin: 0px 0px 40px 0px;
 }
 
 .services__cards {
 	display: flex;
-  justify-content: space-between;
-  width: 83%;
+	justify-content: space-between;
+	width: 83%;
 }
 
 .cards {
@@ -239,7 +242,7 @@ body {
 .item__link {
 }
 .item__image {
-  margin: 0px 0px 16px 0px;
+	margin: 0px 0px 16px 0px;
 }
 .item__name {
 	font-family: "Montserrat";
@@ -247,13 +250,60 @@ body {
 	font-weight: 700;
 	font-size: 32px;
 	line-height: 120%;
-  color: var(--light-text);
+	color: var(--light-text);
 
-  text-align: center;
+	text-align: center;
 }
 /* -------------------ABOUT US--------------------------- */
+.about {
+}
+.about__container {
+	display: flex;
+	flex-wrap: nowrap;
+}
+.about__body {
+}
+.about__text {
+	margin: 0px 0px 24px 0px;
+}
+.mb-40 {
+	margin: 0px 0px 40px 0px;
+}
+.about__title {
+  max-width: 610px;
+}
+.about__advantages {
+}
+.advantages {
+}
+.advantages__list {
+}
+.advantages__item:not(:last-child) {
+	margin: 0px 0px 32px 0px;
+}
+.advantages__text {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
 
+  text-transform: uppercase;
 
+  color: var(--footer-color);
+}
+.advantages__text::after{
+  content: "/";
+  margin: 0px 18px;
+
+}
+.advantages__desc {
+font-size: 16px;
+line-height: 140%;
+}
+.about__image {
+	margin: 0px 0px 0px 48px;
+}
 
 /* -----------------FOOTER--------------------- */
 
