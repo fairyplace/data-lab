@@ -31,12 +31,18 @@ body {
 /* ------------------------HEADER----------------------- */
 .header {
 	width: 100%;
-	position: fixed;
+  position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 42;
+	transition: all 0.4s ease;
 
 	color: var(--light-text);
+	background: linear-gradient(180deg, #7bc0ff -18.67%, #76bdff 100%);
+}
+
+.header__hidden {
+	top: -92px;
 }
 .header__container {
 	display: flex;
@@ -44,7 +50,8 @@ body {
 
 	min-height: 60px;
 
-	padding-top: 40px;
+	padding-top: 16px;
+  padding-bottom: 16px;
 }
 .header__menu {
 	margin: 0px 0px 0px 150px;
@@ -270,7 +277,7 @@ body {
 	margin: 0px 0px 40px 0px;
 }
 .about__title {
-  max-width: 610px;
+	max-width: 610px;
 }
 .about__advantages {
 }
@@ -288,22 +295,26 @@ body {
 	font-size: 24px;
 	line-height: 120%;
 
-  text-transform: uppercase;
+	text-transform: uppercase;
 
-  color: var(--footer-color);
+	color: var(--footer-color);
 }
-.advantages__text::after{
-  content: "/";
-  margin: 0px 18px;
-
+.advantages__text::after {
+	content: "/";
+	margin: 0px 18px;
 }
 .advantages__desc {
-font-size: 16px;
-line-height: 140%;
+	font-size: 16px;
+	line-height: 140%;
 }
 .about__image {
 	margin: 0px 0px 0px 48px;
 }
+
+
+/* ---------------REVIEWS---------------------- */
+
+
 
 /* -----------------FOOTER--------------------- */
 
