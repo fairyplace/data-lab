@@ -168,20 +168,25 @@ body {
 	font-size: 20px;
 	line-height: 120%;
 
-	color: var(--light-text);
-	background: rgba(248, 251, 255, 0.2);
-
 	border-radius: 10px;
 	background-repeat: no-repeat;
 	background-position: 16px;
 }
-.form__button {
+
+.main-block__form input {
+	color: var(--light-text);
+	background-color: rgba(248, 251, 255, 0.2);
+}
+.main-block__form button {
 	padding: 23px 42px;
-	background: var(--secondary-color);
-	border-radius: 10px;
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 24px;
+}
+
+.form__button {
+	background: var(--secondary-color);
+	border-radius: 10px;
 
 	color: var(--light-text);
 
@@ -366,7 +371,7 @@ body {
 }
 .user {
 	display: flex;
-  align-items: center;
+	align-items: center;
 }
 .user__avatar {
 	display: inline-block;
@@ -375,29 +380,29 @@ body {
 
 	margin: 0px 11px 0px 0px;
 }
-.user__info img{
-  vertical-align: baseline
+.user__info img {
+	vertical-align: baseline;
 }
 .user__name {
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 140%;
 }
-.user__grade{
-  overflow: hidden;
+.user__grade {
+	overflow: hidden;
 }
-.review-card:nth-child(1) .user__grade{
-  width: 79px;
+.review-card:nth-child(1) .user__grade {
+	width: 79px;
 }
-.review-card:nth-child(2) .user__grade{
-  width: 70px;
+.review-card:nth-child(2) .user__grade {
+	width: 70px;
 }
 .review__body {
 }
 .reviews__avito {
 }
 .avito {
-  align-self: flex-end;
+	align-self: flex-end;
 }
 .avito__text {
 	display: inline-block;
@@ -435,7 +440,64 @@ body {
 	color: #000;
 }
 
+/* -------------------MAIN FORM------------------ */
+
+.page__form-section {
+  margin: 0px 0px 120px 0px;
+}
+.form-section {
+}
+.form-section__container {
+	max-width: 1010px;
+  position: relative;
+}
+.form-section__body {
+	max-width: 364px;
+}
+.form-section__title {
+}
+.section-title {
+}
+.form-section__text {
+	margin: 0px 0px 24px 0px;
+}
+.form {
+}
+.form-section__form input {
+	background-color: rgba(86, 172, 252, 0.18);
+	color: #4489c9;
+}
+.form-section__form button {
+	padding: 15px 44px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+}
+.form__input {
+}
+.form__messegers{
+  margin: 0px 0px 0px 20px;
+}
+.form__button {
+}
+.form__messegers {
+  display: inline-block;
+}
+.messegers {
+}
+.messegers__item {
+}
+.messegers__link img{
+  vertical-align: middle;
+}
+.form-section__phone {
+  position: absolute;
+  top: 0;
+  right: 0; 
+}
+
 /* -----------------FOOTER--------------------- */
 
 .footer {
+  
 }
