@@ -1,8 +1,8 @@
-"use-strict";
+"use strict";
 
 const hideNav = () => {
 	const hiddenHeaderClassName = "header__hidden";
-	const headerHeight = 92;
+	const headerHeight = 331;
 
 	let initialValue = window.scrollY;
 	let header = document.querySelector("header");

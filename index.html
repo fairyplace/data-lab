@@ -42,34 +42,36 @@
 						</ul>
 					</nav>
 
-					<div class="header__contacts contacts">
-						<ul class="contacts__tel">
+					<div class="header__contacts header-contacts">
+						<ul class="header-contacts__list">
 							<li>
 								<a href="tel:88005054534" class="tel__link"
 									>8 (800) 505-45-34</a
 								>
 							</li>
-						</ul>
-
-						<ul class="contacts__messegers messegers">
-							<li class="messegers__item">
-								<a class="messegers__link" href="">
+              <li class="messeger-item">
+                <a class="messeger-item__link" href="">
 									<img
 										src="img/messegers/icons8-telegram 2.svg"
 										alt="icon-telegram"
 									/>
 								</a>
-							</li>
-							<li class="messegers__item">
-								<a class="messegers__link" href="">
+              </li><li class="messeger-item">
+                <a class="messeger-item__link" href="">
 									<img
 										src="img/messegers/icons8-whatsapp 2.svg"
 										alt="icon-whatsapp"
 									/>
 								</a>
-							</li>
+              </li>
 						</ul>
+            <a href="" class="header-contacts__form-link">
+              Заказать звонок
+            </a>
 					</div>
+
+
+
 				</div>
 			</header>
 			<main class="page">
@@ -92,6 +94,8 @@
 										class="form__input"
 										type="tel"
 										placeholder="+7(922) 929 29-92"
+                    name="phoneNum"
+
 									/>
 
 									<button class="form__button">Оставить заявку</button>
@@ -302,9 +306,10 @@
 									class="form__input"
 									type="tel"
 									placeholder="+7(922) 929 29-92"
+                  name="phoneNum"
 								/>
 								<div class="form__buttons-group">
-									<button class="form__button">Оставить заявку</button>
+									<button class="form__button" id="submit-btn">Оставить заявку</button>
 									<ul class="form__messegers messegers">
 										<li class="messegers__item">
 											<a class="messegers__link" href="">
@@ -348,7 +353,8 @@
 									style="background-image: url('img/contacs/smartphone.svg')"
 									class="contacts-list__item"
 								>
-									8 (999) 999 99 99
+									<!-- Вставить телефон -->
+									<a href="tel:"> 8 (999) 999 99 99 </a>
 								</li>
 								<li
 									style="background-image: url('img/contacs/clock.svg')"
@@ -360,13 +366,16 @@
 									style="background-image: url('img/contacs/mail.svg')"
 									class="contacts-list__item"
 								>
-									example@example.com
+									<!-- Вставить почту -->
+									<a href="mailto:?subject=Восстановление данных с ">
+										example@example.com
+									</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<iframe
-            class="contacts-section__map"
+						class="contacts-section__map"
 						src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bff2b0873cc48917e9ab0c23bdec998f2e4dc352007667f4a7561167bad8740&amp;source=constructor"
 						width="64%"
 						height="525"
@@ -378,42 +387,80 @@
 			<footer class="footer">
 				<div class="footer__container _container">
 					<div class="footer__row">
-						<div class="footer__column">
-							<div class="footer__logo logo"><img src="" alt="" /></div>
+						<div class="footer__logo logo">
+							<img src="img/logo/logo.svg" alt="" />
 						</div>
-						<div class="footer__column">
-							<nav class="footer__menu menu">
-								<ul class="menu__list">
-									<li class="menu__item">
-										<a class="menu__link" href="">Главная</a>
-									</li>
-									<li class="menu__item">
-										<a class="menu__link" href="">Услуги</a>
-									</li>
-									<li class="menu__item">
-										<a class="menu__link" href="">О компании</a>
-									</li>
-									<li class="menu__item">
-										<a class="menu__link" href="">Отзывы</a>
-									</li>
-									<li class="menu__item">
-										<a class="menu__link" href="">Контакты</a>
-									</li>
-								</ul>
-							</nav>
+						<nav class="footer__menu menu">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a class="menu__link" href="">Главная</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="">Услуги</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="">О компании</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="">Отзывы</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="footer__contacts">
+							<div class="footer__contacts-group">
+								<p>Наш офис находится по адресу:</p>
+								<p>г. Челябинск, ул. Труда 24</p>
+							</div>
+							<div class="footer__contacts-group">
+								<p>Мы работаем:</p>
+								<p>Будни с 9 до 18:00</p>
+							</div>
 						</div>
-						<ul class="footer__column footer__services-list">
-							<li class="footer__services-item"><a href=""></a></li>
-							<li class="footer__services-item"><a href=""></a></li>
-							<li class="footer__services-item"><a href=""></a></li>
-							<li class="footer__services-item"><a href=""></a></li>
-						</ul>
-						<div class="footer__column"></div>
-						<div class="footer__column"></div>
+						<div class="footer__contacts">
+							<div class="footer__contacts-group">
+								<!-- Указать почту -->
+								<div class="footer__email">
+									<a href="mailto:?subject=Восстановление данных с "
+										>example@example.com</a
+									>
+								</div>
+								<div class="contacts">
+									<div class="footer__tel">
+										<a href="tel:88005054534" class="tel__link">
+											8 (800) 505-45-34
+										</a>
+									</div>
+									<ul class="footer__messegers messegers">
+										<li class="messegers__item">
+											<a class="messegers__link" href="">
+												<img
+													src="img/messegers/icons8-telegram 2.svg"
+													alt="icon-telegram"
+												/>
+											</a>
+										</li>
+										<li class="messegers__item">
+											<a class="messegers__link" href="">
+												<img
+													src="img/messegers/icons8-whatsapp 2.svg"
+													alt="icon-whatsapp"
+												/>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<a href="" class="footer__form-link">Оставить заявку</a>
+						</div>
 					</div>
 				</div>
 			</footer>
 		</div>
 		<script src="js/script.js"></script>
+    <script src="js/form.js"></script>
 	</body>
 </html>
