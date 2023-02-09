@@ -616,7 +616,8 @@ body {
 	margin: 0px 0px 32px 0px;
 }
 
-.footer__tel {
+.footer__tel, .footer__email {
+  text-align: end;
 }
 .tel__link {
 }
