@@ -14,6 +14,9 @@ body {
 
 	color: var(--dark-text);
 }
+body._scroll-lock{
+  overflow: hidden;
+}
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
@@ -74,7 +77,7 @@ body {
 	padding-top: 16px;
 	padding-bottom: 16px;
 }
-.header__burger {
+.header__mobile {
 	display: flex;
 	align-items: center;
 }
@@ -159,7 +162,7 @@ body {
 	display: inline-block;
 }
 @media (max-width: 1200px) {
-	.burger__icon {
+	.mobile-icon {
 		z-index: 5;
 		display: block;
 		position: relative;
@@ -167,9 +170,9 @@ body {
 		height: 24px;
 		cursor: pointer;
 	}
-	.burger__icon span,
-	.burger__icon::before,
-	.burger__icon::after {
+	.mobile-icon span,
+	.mobile-icon::before,
+	.mobile-icon::after {
 		left: 0;
 		position: absolute;
 		height: 10%;
@@ -178,22 +181,33 @@ body {
 		background-color: var(--light-text);
 	}
 
-	.burger__icon::before,
-	.burger__icon::after {
+	.mobile-icon::before,
+	.mobile-icon::after {
 		content: "";
 	}
-	.burger__icon::before {
+	.mobile-icon::before {
 		top: 0;
 	}
-	.burger__icon::after {
+	.mobile-icon::after {
     bottom: 0;
 	}
-  .burger__icon span{
+  .mobile-icon span{
     top: 50%;
     transform: scale(1) translate(0px, -50% );
   }
 
-  .header__burger{
+  .mobile-icon._active span{
+    transform: scale(0) translate(0px, -50%);
+  }
+  .mobile-icon._active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .mobile-icon._active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+  .header__mobile{
     position: fixed;
     top: 0;
     left: 0;
@@ -201,6 +215,8 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 100px 30px 30px 30px;
+
+    left: -100%;
     transition: left .3s ease 0s;
 
     overflow: auto;
@@ -208,7 +224,6 @@ body {
     flex-direction: column;
 
     align-items: center;
-    justify-content: space-around;
   }
   .header__menu{
     margin: 0 auto; 
@@ -217,7 +232,7 @@ body {
     flex-direction: column;
   }
   .menu__item{
-    margin: 0px 0px 48px 0px !important;
+    margin: 0px 0px 32px 0px !important;
     text-align: center;
   }
   .menu__link{
@@ -229,7 +244,7 @@ body {
     align-items: center;
   }
   .header-contacts__list > li{
-    margin: 0px 0px 32px 0px !important;
+    margin: 0px 0px 24px 0px !important;
   }
   .header-contacts__list > li:first-child{
     text-align: center;
@@ -245,6 +260,10 @@ body {
     padding: 12px 21px !important;
     margin: 0 auto;
     font-size: 18px;
+  }
+
+  .header__mobile._active{
+    left: 0;
   }
 }
 
