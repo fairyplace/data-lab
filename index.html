@@ -66,7 +66,7 @@
 									>
 								</li>
 								<li class="messeger-item">
-									<a class="messeger-item__link" href="">
+									<a class="messeger-item__link messegers__link" href="">
 										<img
 											src="img/messegers/icons8-telegram 2.svg"
 											alt="icon-telegram"
@@ -74,7 +74,7 @@
 									</a>
 								</li>
 								<li class="messeger-item">
-									<a class="messeger-item__link" href="">
+									<a class="messeger-item__link messegers__link" href="">
 										<img
 											src="img/messegers/icons8-whatsapp 2.svg"
 											alt="icon-whatsapp"
@@ -116,6 +116,8 @@
 											type="tel"
 											placeholder="+7(922) 929 29-92"
 											name="phoneNum"
+                      pattern="^[0-9]{11}"
+                      title="Введите номер телефона"
 										/>
 										<button class="form__button">Оставить заявку</button>
 									</form>
@@ -223,58 +225,62 @@
 							<div class="review-card">
 								<div class="review-card__user user">
 									<div class="user__avatar">
-										<img src="img/reviews/avatar.jpg" alt="user avatar" />
+										<img src="img/reviews/review-user-1.jpg" alt="user avatar" />
 									</div>
 									<div class="user__info">
-										<p class="user__name">Вася Зажигалкин</p>
+										<p class="user__name">Алексей</p>
 										<div class="user__grade">
 											<img src="img/reviews/review-stars.svg" alt="" />
 										</div>
 									</div>
+                  <p class="user__date">28 декабря 2021</p>
 								</div>
 								<div class="review__body">
-									Как принято считать, сделанные на базе интернет-аналитики
-									выводы разоблачены. Принимая во внимание показатели
-									успешности, существующая теория позволяет оценить значение
-									модели развития.
+									<p>Комментарий</p>
+                  <p>
+                    отличный ребята
+                  </p>
+								</div>
+							</div>
+              <div class="review-card">
+								<div class="review-card__user user">
+									<div class="user__avatar">
+										<img src="img/reviews/review-user-2.jpg" alt="user avatar" />
+									</div>
+									<div class="user__info">
+										<p class="user__name">Роман</p>
+										<div class="user__grade">
+											<img src="img/reviews/review-stars.svg" alt="" />
+										</div>
+									</div>
+                  <p class="user__date">5 сентября 2022</p>
+								</div>
+								<div class="review__body">
+									<p>Комментарий</p>
+                  <p>
+                    Грамотный специалист
+                  </p>
 								</div>
 							</div>
 
-							<div class="review-card">
+              <div class="review-card">
 								<div class="review-card__user user">
 									<div class="user__avatar">
-										<img src="img/reviews/avatar.jpg" alt="user avatar" />
+										<img src="img/reviews/review-user-3.jpg" alt="user avatar" />
 									</div>
 									<div class="user__info">
-										<span class="user__name">Александр Шишкин</span>
+										<p class="user__name">Александр</p>
 										<div class="user__grade">
 											<img src="img/reviews/review-stars.svg" alt="" />
 										</div>
 									</div>
+                  <p class="user__date">22 ноября 2022</p>
 								</div>
 								<div class="review__body">
-									Приятно, граждане, наблюдать, как акционеры крупнейших
-									компаний освещают чрезвычайно интересные особенности картины в
-									целом.
-								</div>
-							</div>
-
-							<div class="review-card">
-								<div class="review-card__user user">
-									<div class="user__avatar">
-										<img src="img/reviews/avatar.jpg" alt="user avatar" />
-									</div>
-									<div class="user__info">
-										<span class="user__name">Елена Бутылкина</span>
-										<div class="user__grade">
-											<img src="img/reviews/review-stars.svg" alt="" />
-										</div>
-									</div>
-								</div>
-								<div class="review__body">
-									Равным образом, курс на социально-ориентированный национальный
-									проект играет определяющее значение для экономической
-									целесообразности принимаемых решений!
+									<p>Комментарий</p>
+                  <p>
+                    Ребята знают своё дело, рекомендую
+                  </p>
 								</div>
 							</div>
 						</div>
@@ -282,9 +288,9 @@
 							<span class="avito__text">
 								Больше отзывов о нашей работе, вы можете посмотреть на Авито
 							</span>
-							<a href="" class="avito__link">
-								<img src="img/reviews/avito logo.jpg" alt="" />
-								<span class="avito__grade">4,7</span>
+							<a href="https://www.avito.ru/chelyabinsk/predlozheniya_uslug/vosstanovlenie_informatsii_remont_hddssdflash_1941426443" class="avito__link">
+								<img src="img/reviews/avito-logo.svg" alt="" />
+								<span class="avito__grade">5,0</span>
 							</a>
 						</div>
 					</div>
@@ -307,6 +313,8 @@
 									type="tel"
 									placeholder="+7(922) 929 29-92"
 									name="phoneNum"
+                  pattern="^[0-9]{11}"
+                  title="Введите номер телефона"
 								/>
 								<div class="form__buttons-group">
 									<button class="form__button" id="submit-btn">
@@ -334,7 +342,7 @@
 							</form>
 						</div>
 						<div class="form-section__phone">
-							<img src="img/form/iPhone 12.jpg" alt="" />
+							<img src="img/form/iPhone-12.jpg" alt="" />
 						</div>
 					</div>
 				</section>
@@ -462,7 +470,12 @@
 									</ul>
 								</div>
 							</div>
-							<a href="" class="footer__form-link">Оставить заявку</a>
+							<a
+								data-goto=".page__form-section"
+								href=""
+								class="footer__form-link"
+								>Оставить заявку</a
+							>
 						</div>
 					</div>
 				</div>
@@ -470,5 +483,6 @@
 		</div>
 		<script src="js/script.js"></script>
 		<script type="module" src="js/form.js"></script>
+    <script src="https://unpkg.com/imask"></script>
 	</body>
 </html>
