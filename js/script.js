@@ -76,7 +76,13 @@ function onMenuLinkClick(e) {
       behavior: "smooth"
     });
     e.preventDefault();
+    if (e.target.dataset.goto == '.page__form-section') {
+      setTimeout(()=>{
+        document.forms[1].elements.phoneNum.focus()
+      }, 500)
+    }
   }
+
 
 }
 
