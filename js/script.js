@@ -58,8 +58,12 @@ if (menuLinks.length > 0){
 }
 
 function onMenuLinkClick(e) {
-  
-  const menuLink = e.target;
+
+  let menuLink = e.target
+
+  if (!e.target.dataset.goto) {
+    menuLink = e.target.closest('a[data-goto]')    
+  }
 
   if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
     const gotoBlock = document.querySelector(menuLink.dataset.goto);
