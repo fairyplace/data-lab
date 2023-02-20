@@ -306,7 +306,8 @@ body._scroll-lock {
 	color: var(--light-text);
 }
 .main-block__container{
- 
+  display: flex;
+  justify-content: space-between;
 }
 .main-block__banner{
   max-width: 600px;
@@ -320,14 +321,14 @@ body._scroll-lock {
 
   margin: 0px 40px 0px 0px;
 }
-/* @media (max-width:940px) {
+@media (max-width:940px) {
   .main-block__body{
     margin: 0;
   }
   .main-block__banner{
     display: none;
   }
-} */
+}
 .main-block__title {
   max-width: 600px;
 	font-family: "Montserrat";
@@ -339,6 +340,7 @@ body._scroll-lock {
 }
 
 .main-block__text {
+  max-width: 600px;
 	font-family: "Montserrat";
 	font-style: normal;
 	font-weight: 500;
@@ -944,6 +946,9 @@ input[type='tel']:focus{
 /* Адаптив форм */
 
 @media (max-width: 425px) {
+  .main-block__form{
+    width: 100%;
+  }
 	.form__input {
 		width: 100%;
 		font-size: 18px;
