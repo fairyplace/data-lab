@@ -124,22 +124,7 @@ body._scroll-lock {
 	text-decoration: none; 
 
 }
-.header__menu .menu__link:after {
-	display: block;
-	position: absolute;
-	left: 0;
-	width: 0;
-	height: 2px;
-	background-color: var(--light-text);
-	content: "";
-	transition: width 0.3s ease-out; 
-}
 
-.header__menu .menu__link:hover:after,
-.header__menu .menu__link:focus:after {
-	width: 100%;
-
-}
 .contacts {
 	display: flex;
 	flex-direction: column;
@@ -157,11 +142,7 @@ body._scroll-lock {
 	line-height: 130%;
   transition: all .25s ease;
 }
-.header-contacts__form-link:hover{
-  background-color: var(--light-text);
-  color: var(--primary-color);
-  font-weight: 500;
-}
+
 .tel__link {
 	font-weight: 600;
 	font-size: 20px;
@@ -176,9 +157,7 @@ body._scroll-lock {
 .messegers__link img{
   transition: all 0.1s;
 }
-.messegers__link img:hover{
-  transform: scale(1.05);
-}
+
 /* Mobile Menu */
 @media (max-width: 942px) {
 	.header__logo {
@@ -405,25 +384,60 @@ input[type='tel']:focus{
   overflow: hidden;
   cursor: pointer;
 }
-.form__button:hover{
-  transform: scale(1.05);
-}
-.form__button::before{
-  background-color: rgba(255, 255, 255, 0.15);
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
+/* Disable hover effects on mobile*/
+@media (min-width:942px) {
+  .form__button:hover{
+    transform: scale(1.05);
+  }
+  .form__button::before{
+    background-color: rgba(255, 255, 255, 0.15);
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  
+    transform: rotateZ(-45deg);
+    transition: all .6s ease;
+  }
+  .form__button:hover::before{
+    left: 100%;
+  }
 
-  transform: rotateZ(-45deg);
-  transition: all .6s ease;
+  .header-contacts__form-link:hover{
+    background-color: var(--light-text);
+    color: var(--primary-color);
+    font-weight: 500;
+  }
+
+  .footer__form-link:hover{
+    background-color: var(--light-text);
+    color: var(--footer-color);
+    font-weight: 500;
+  }
+  .header__menu .menu__link:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--light-text);
+    content: "";
+    transition: width 0.3s ease-out; 
+  }
+  
+  .header__menu .menu__link:hover:after,
+  .header__menu .menu__link:focus:after {
+    width: 100%;
+  }
+
+  .messegers__link img:hover{
+    transform: scale(1.05);
+  }
 }
-.form__button:hover::before{
-  left: 100%;
-}
+
 
 /* ------------------SERVICES-------------------------- */
 .services__body {
@@ -906,11 +920,7 @@ input[type='tel']:focus{
   transition: all .25s ease;
 
 }
-.footer__form-link:hover{
-  background-color: var(--light-text);
-  color: var(--footer-color);
-  font-weight: 500;
-}
+
 
 @media (max-width: 920px) {
 	.footer__logo {
