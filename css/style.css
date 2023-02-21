@@ -888,9 +888,6 @@ input[type='tel']:focus{
 	flex-wrap: wrap;
 	margin: 60px 0px 40px 0px;
 }
-.footer__logo img {
-	width: 90px;
-}
 .footer__menu li:not(:last-child) {
 	margin: 0px 0px 16px 0px;
 }
@@ -909,6 +906,9 @@ input[type='tel']:focus{
 .footer__email {
 	text-align: end;
 }
+.footer__tel{
+  margin: 0px 0px 16px 0px;
+}
 .footer__form-link {
 	display: block;
 	padding: 15px 44px;
@@ -923,9 +923,6 @@ input[type='tel']:focus{
 
 
 @media (max-width: 920px) {
-	.footer__logo {
-		transform: scale(0.7);
-	}
 	.footer__row {
 		min-height: 70vh;
 		flex-direction: column;
