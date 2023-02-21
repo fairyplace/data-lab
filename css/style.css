@@ -160,9 +160,9 @@ body._scroll-lock {
 
 /* Mobile Menu */
 @media (max-width: 942px) {
-	.header__logo {
-		transform: scale(0.8);
-	}
+	.header__logo img{
+    width: 100px;
+  }
 	.mobile-icon {
 		z-index: 5;
 		display: block;
@@ -907,7 +907,7 @@ input[type='tel']:focus{
 	text-align: end;
 }
 .footer__tel{
-  margin: 0px 0px 16px 0px;
+  margin: 0px 0px 16px 0px  ;
 }
 .footer__form-link {
 	display: block;
