@@ -345,6 +345,18 @@ body._scroll-lock {
 
 	position: relative;
 }
+.form__input.error{
+  border: 2px solid #fc6262 !important;
+}
+
+/* .form-error{
+  color: #ff5459;
+  visibility: hidden;
+}
+.form-error._active{
+  margin: 0px 0px 8px 0px;
+  display: initial;
+} */
 .main-block__form input {
 	color: var(--light-text);
 	background-color: rgba(248, 251, 255, 0.2);
