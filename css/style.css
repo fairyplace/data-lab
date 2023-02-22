@@ -120,9 +120,8 @@ body._scroll-lock {
 .header__menu .menu__link {
 	position: relative;
 	cursor: pointer;
-	line-height: 1; 
-	text-decoration: none; 
-
+	line-height: 1;
+	text-decoration: none;
 }
 
 .contacts {
@@ -140,7 +139,7 @@ body._scroll-lock {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 130%;
-  transition: all .25s ease;
+	transition: all 0.25s ease;
 }
 
 .tel__link {
@@ -154,15 +153,15 @@ body._scroll-lock {
 .messegers__item {
 	display: inline-block;
 }
-.messegers__link img{
-  transition: all 0.1s;
+.messegers__link img {
+	transition: all 0.1s;
 }
 
 /* Mobile Menu */
 @media (max-width: 942px) {
-	.header__logo img{
-    width: 100px;
-  }
+	.header__logo img {
+		width: 100px;
+	}
 	.mobile-icon {
 		z-index: 5;
 		display: block;
@@ -283,32 +282,31 @@ body._scroll-lock {
 .main-block {
 	color: var(--light-text);
 }
-.main-block__container{
-  display: flex;
-  justify-content: space-between;
+.main-block__container {
+	display: flex;
+	justify-content: space-between;
 }
-.main-block__banner{
-  max-width: 600px;
+.main-block__banner {
+	max-width: 600px;
 }
-.main-block__banner img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.main-block__banner img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 .main-block__body {
-
-  margin: 0px 40px 0px 0px;
+	margin: 0px 40px 0px 0px;
 }
-@media (max-width:940px) {
-  .main-block__body{
-    margin: 0;
-  }
-  .main-block__banner{
-    display: none;
-  }
+@media (max-width: 940px) {
+	.main-block__body {
+		margin: 0;
+	}
+	.main-block__banner {
+		display: none;
+	}
 }
 .main-block__title {
-  max-width: 600px;
+	max-width: 600px;
 	font-family: "Montserrat";
 	font-style: normal;
 	font-weight: 700;
@@ -318,7 +316,7 @@ body._scroll-lock {
 }
 
 .main-block__text {
-  max-width: 600px;
+	max-width: 600px;
 	font-family: "Montserrat";
 	font-style: normal;
 	font-weight: 500;
@@ -345,7 +343,7 @@ body._scroll-lock {
 	background-repeat: no-repeat;
 	background-position: 16px;
 
-  position: relative;
+	position: relative;
 }
 .main-block__form input {
 	color: var(--light-text);
@@ -355,15 +353,15 @@ body._scroll-lock {
 	color: rgba(255, 255, 255, 0.777);
 }
 
-input[type='tel']{
-  border: 2px solid transparent;
-  transition: all 0.2s;
+input[type="tel"] {
+	border: 2px solid transparent;
+	transition: all 0.2s;
 }
-input[type='tel']:focus{
-  border: 2px solid #4489c9;
+input[type="tel"]:focus {
+	border: 2px solid #4489c9;
 }
 .main-block__form input:focus {
-  border: 2px solid #ffffff;
+	border: 2px solid #ffffff;
 }
 .main-block__form button {
 	display: block;
@@ -377,67 +375,66 @@ input[type='tel']:focus{
 	background: var(--secondary-color);
 	color: var(--light-text);
 	border-radius: 10px;
-  
-  position: relative;
-  transition: all .3s ease;
-  
-  overflow: hidden;
-  cursor: pointer;
+
+	position: relative;
+	transition: all 0.3s ease;
+
+	overflow: hidden;
+	cursor: pointer;
 }
 /* Disable hover effects on mobile*/
-@media (min-width:942px) {
-  .form__button:hover{
-    transform: scale(1.05);
-  }
-  .form__button::before{
-    background-color: rgba(255, 255, 255, 0.15);
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  
-    transform: rotateZ(-45deg);
-    transition: all .6s ease;
-  }
-  .form__button:hover::before{
-    left: 100%;
-  }
+@media (min-width: 942px) {
+	.form__button:hover {
+		transform: scale(1.05);
+	}
+	.form__button::before {
+		background-color: rgba(255, 255, 255, 0.15);
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
 
-  .header-contacts__form-link:hover{
-    background-color: var(--light-text);
-    color: var(--primary-color);
-    font-weight: 500;
-  }
+		transform: rotateZ(-45deg);
+		transition: all 0.6s ease;
+	}
+	.form__button:hover::before {
+		left: 100%;
+	}
 
-  .footer__form-link:hover{
-    background-color: var(--light-text);
-    color: var(--footer-color);
-    font-weight: 500;
-  }
-  .header__menu .menu__link:after {
-    display: block;
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--light-text);
-    content: "";
-    transition: width 0.3s ease-out; 
-  }
-  
-  .header__menu .menu__link:hover:after,
-  .header__menu .menu__link:focus:after {
-    width: 100%;
-  }
+	.header-contacts__form-link:hover {
+		background-color: var(--light-text);
+		color: var(--primary-color);
+		font-weight: 500;
+	}
 
-  .messegers__link img:hover{
-    transform: scale(1.05);
-  }
+	.footer__form-link:hover {
+		background-color: var(--light-text);
+		color: var(--footer-color);
+		font-weight: 500;
+	}
+	.header__menu .menu__link:after {
+		display: block;
+		position: absolute;
+		left: 0;
+		width: 0;
+		height: 2px;
+		background-color: var(--light-text);
+		content: "";
+		transition: width 0.3s ease-out;
+	}
+
+	.header__menu .menu__link:hover:after,
+	.header__menu .menu__link:focus:after {
+		width: 100%;
+	}
+
+	.messegers__link img:hover {
+		transform: scale(1.05);
+	}
 }
-
 
 /* ------------------SERVICES-------------------------- */
 .services__body {
@@ -630,7 +627,7 @@ input[type='tel']:focus{
 .reviews__cards {
 	display: flex;
 	margin: 0px 0px 40px;
-  width: 100%;
+	width: 100%;
 }
 .review-card {
 	width: 33.33%;
@@ -646,10 +643,9 @@ input[type='tel']:focus{
 .review-card__user {
 	margin: 0px 0px 8px 0px;
 }
-.review__body p:first-child{
-  font-weight: 600;
+.review__body p:first-child {
+	font-weight: 600;
 	margin: 0px 0px 8px 0px;
-
 }
 .user {
 	display: flex;
@@ -661,9 +657,9 @@ input[type='tel']:focus{
 	overflow: hidden;
 	margin: 0px 11px 0px 0px;
 }
-.user__avatar img{
-  width: 30px;
-  height: 30px;
+.user__avatar img {
+	width: 30px;
+	height: 30px;
 }
 .user__info img {
 	vertical-align: baseline;
@@ -673,11 +669,11 @@ input[type='tel']:focus{
 	font-size: 16px;
 	line-height: 140%;
 }
-.user__date{
-  font-size: 12px;
-  color: #808080;
-  margin-left: auto;
-  align-self: flex-end;
+.user__date {
+	font-size: 12px;
+	color: #808080;
+	margin-left: auto;
+	align-self: flex-end;
 }
 .user__grade {
 	overflow: hidden;
@@ -906,8 +902,8 @@ input[type='tel']:focus{
 .footer__email {
 	text-align: end;
 }
-.footer__tel{
-  margin: 0px 0px 16px 0px  ;
+.footer__tel {
+	margin: 0px 0px 16px 0px;
 }
 .footer__form-link {
 	display: block;
@@ -916,12 +912,63 @@ input[type='tel']:focus{
 	font-size: 16px;
 	line-height: 20px;
 	border-radius: 10px;
-  border: 1px solid var(--light-text);
-  transition: all .25s ease;
-
+	border: 1px solid var(--light-text);
+	transition: all 0.25s ease;
 }
 
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 100;
 
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all .3s ease-in-out 0s;
+}
+body.lock{
+  overflow: hidden;
+}
+.modal.open{
+  opacity: 1;
+  visibility: visible;
+}
+.modal__container {
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 24px 16px;
+}
+.modal__content {
+	max-width: 600px;
+	padding: 64px 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: #ffffff;
+}
+.modal__title {
+}
+.modal__text {
+	margin: 0px 0px 40px 0px;
+}
+.modal__button {
+	display: block;
+  padding: 16px 64px;
+  border-radius: 10px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+  color: var(--light-text) !important;
+	background-color: var(--primary-color);
+}
 @media (max-width: 920px) {
 	.footer__row {
 		min-height: 70vh;
@@ -952,9 +999,9 @@ input[type='tel']:focus{
 /* Адаптив форм */
 
 @media (max-width: 425px) {
-  .main-block__form{
-    width: 100%;
-  }
+	.main-block__form {
+		width: 100%;
+	}
 	.form__input {
 		width: 100%;
 		font-size: 18px;
