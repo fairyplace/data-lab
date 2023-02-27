@@ -73,10 +73,11 @@ for (var form of document.forms) {
 	form.addEventListener("submit", (e) => {
 		e.preventDefault();
 		const phoneInput = e.target.elements.phoneNum;
+    const errMsg = phoneInput.previousElementSibling
     if (phoneInput.value.replace(/[^0-9]/g, '').length < 11) {
-      phoneInput.classList.add('error')
+      if (errMsg.classList.contains('form-error')) errMsg.classList.add('_active')
     } else{
-      phoneInput.classList.remove('error')
+      errMsg.classList.remove('_active')
       send_lead(phoneInput.value);
       phoneInput.value = "";
     }
