@@ -701,44 +701,7 @@ input[type="tel"]:focus {
 .user__grade {
 	overflow: hidden;
 }
-.avito {
-	align-self: flex-end;
-}
-.avito__text {
-	display: inline-block;
-	max-width: 360px;
-	margin: 0px 50px 0px 0px;
-	font-size: 16px;
 
-	position: relative;
-}
-
-.avito__text::after {
-	content: "";
-	position: absolute;
-	width: 235px;
-	height: 3px;
-	background-color: #fff;
-	top: 37px;
-	left: 180px;
-}
-.avito__link {
-	display: inline-block;
-	background: #ffffff;
-	border-radius: 8px;
-	padding: 14px;
-}
-.avito__link img {
-	margin: 0px 8px 0px 0px;
-	vertical-align: bottom;
-}
-.avito__grade {
-	font-family: "Montserrat";
-	font-weight: 700;
-	font-size: 23px;
-	line-height: 120%;
-	color: #000;
-}
 
 @media (max-width: 960px) {
 	.reviews__container {
@@ -754,20 +717,6 @@ input[type="tel"]:focus {
 	}
 	.review-card:not(:last-child) {
 		margin: 0px 0px 20px 0px;
-	}
-
-	.avito__text {
-		text-align: center;
-		margin: 0px 0px 20px 0px;
-	}
-	.avito__text::after {
-		display: none;
-	}
-	.reviews__avito {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 	}
 }
 
