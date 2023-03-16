@@ -107,8 +107,6 @@ a.external-link{
 	flex-direction: column;
 	flex-shrink: 0;
 }
-.header-contacts__list {
-}
 .header-contacts__list li {
 	display: inline;
 }
